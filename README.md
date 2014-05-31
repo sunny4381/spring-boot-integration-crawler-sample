@@ -1,4 +1,4 @@
-# Spring Boot と Spring Integration を使用して RSS を取得するサンプル
+# Spring Boot と Spring Integration を使用したクローラ
 
 Spring Integration 4 から XML が不要になりました。
 Spring Boot と Spring Integration を使用して XML を使用せずに Java Config のみを使って単純なクローラを作ってみます。
