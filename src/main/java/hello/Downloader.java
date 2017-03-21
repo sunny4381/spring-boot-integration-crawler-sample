@@ -34,6 +34,11 @@ public class Downloader {
 	@InboundChannelAdapter(value = "channel1", poller = @Poller("downloadTrigger"))
 	public ResponseEntity<String> download() {
 		String url = config.getUrl();
+		try {
+			SSLUtil.turnOffSslChecking();
+		}catch (Exception e){
+
+		}
 		ResponseEntity<String> entity = template.getForEntity(url, String.class);
 		return entity;
 	}
