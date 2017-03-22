@@ -24,7 +24,7 @@ import java.util.concurrent.TimeUnit;
 @Component
 @ConfigurationProperties
 public class CrawlerConfig {
-	private static final String DEFAULT_URL = "http://dumps.wikimedia.org/backup-index.html";
+	private static final String DEFAULT_URL = "https://dumps.wikimedia.org/backup-index.html";
 	private static final long DEFAULT_DOWNLOAD_INTERVAL = TimeUnit.HOURS.toMillis(1);
 	private String url = DEFAULT_URL;
 	private long downloadInterval = DEFAULT_DOWNLOAD_INTERVAL;
